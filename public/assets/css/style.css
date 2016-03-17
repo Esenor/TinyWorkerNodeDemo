@@ -1,0 +1,13 @@
+header {
+    margin-top: 50px;
+}
+
+small {
+    color: #425e66;
+    font-style: italic;
+}
+
+.people {
+    display: inline-block;
+    margin: 0px;
+}

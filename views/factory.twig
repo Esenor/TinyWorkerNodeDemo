@@ -1,0 +1,12 @@
+{% extends "/template/default.twig" %}
+{% block content %}
+    <p>{{ sample }} little workers in a population of {{ population }} robots.</p>
+    {% for i in 1..population %}
+        {% if i <= sample %}
+            <img src="/assets/images/efcbot_blue.png" width="20" alt="sample of population" class="people"/>
+        {% else %}
+            <img src="/assets/images/efcbot_grey.png" width="20" alt="not a sample of population" class="people"/>
+        {% endif %}
+    {% endfor %}
+    <p><a href="http://{{ parent_url }}">Go back</a></p>
+{% endblock %}
